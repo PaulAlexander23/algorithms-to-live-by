@@ -14,7 +14,7 @@ def test_optimal_stopping_algorithm():
     a = optimal_stopping_algorithm()
     np.random.seed(0)
     c = candidate_list(10)
-    #assert a.solve(c.candidates) == c.candidates[0]
+    assert a.solve(c.candidates) == c.candidates[7]
 
 
 
