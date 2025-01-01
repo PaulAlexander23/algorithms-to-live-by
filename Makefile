@@ -3,7 +3,7 @@ PYTHON = python
 VENV = .venv
 ACTIVATE = source $(VENV)/bin/activate
 SUBFOLDERS = $(shell find . -type d -not -path "./.*" -not -path "./__pycache__" -not -path "./$(VENV)")
-TESTS = $(shell find . -type d -name "tests")
+TESTS = $(shell find . -type d - not -path ".venv" -name "tests")
 
 # Targets
 .PHONY: setup test clean $(SUBFOLDERS)
