@@ -3,7 +3,6 @@ PYTHON = python
 VENV = .venv
 ACTIVATE = source $(VENV)/bin/activate
 SUBFOLDERS = $(shell find . -type d -not -path "./.*" -not -path "./__pycache__" -not -path "./$(VENV)")
-TESTS = $(shell find . -type d - not -path ".venv" -name "tests")
 
 # Targets
 .PHONY: setup test clean $(SUBFOLDERS)
@@ -23,7 +22,7 @@ $(SUBFOLDERS):
 # Run tests
 test:
 	@echo "Running tests in all test folders..."
-	@$(ACTIVATE) && pytest $(TESTS)
+	@$(ACTIVATE) && pytest
 
 # Clean up build artifacts
 clean:

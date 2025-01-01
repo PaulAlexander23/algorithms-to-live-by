@@ -1,12 +1,8 @@
 import pytest
-#from stopping_problem.main import main
+from stopping_problem import main
 
 
-def test_pass():
-    assert 1
-
-
-def test_fail():
-    assert 0
+def test_main():
+    assert main.main()
 
 
