@@ -3,6 +3,6 @@ from stopping_problem import main
 
 
 def test_main():
-    assert main.main()
+    assert main.main() == 0
 
 
