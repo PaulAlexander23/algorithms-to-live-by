@@ -1,8 +1,8 @@
 import pytest
-from stopping_problem import main
+from stopping_problem.main import main
 
 
 def test_main():
-    assert main.main() == 0
+    assert main() == 0
 
 
