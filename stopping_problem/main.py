@@ -34,14 +34,17 @@ def main():
     N = int(input("Enter the number of candidates: "))
     c = candidate_list(N)
 
-    print("Candidates:")
-
-    for i in range(N):
-        print(f"{i}: {c.candidates[i].quality}")
 
     print(f"Selected candidate: {a.solve(c.candidates).quality}")
 
     print(f"Best candidate: {c.best.quality}")
+
+    print("")
+
+    print("Candidates:")
+
+    for i in range(N):
+        print(f"{i}: {c.candidates[i].quality}")
 
     return 0
 
