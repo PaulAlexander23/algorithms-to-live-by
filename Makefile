@@ -1,7 +1,7 @@
 # Variables
 PYTHON = python
 VENV = .venv
-ACTIVATE = source $(VENV)/bin/activate
+ACTIVATE = . $(VENV)/bin/activate
 SUBFOLDERS = $(shell find . -type d -not -path "./.*" -not -path "./__pycache__" -not -path "./$(VENV)")
 
 # Targets
