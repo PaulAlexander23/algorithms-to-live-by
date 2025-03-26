@@ -1,14 +1,12 @@
 # Algorithms To Live By
 
-My own python implementations of the algorithms mentioned in the Algorithms to live by book.
-
-What does this project do?
-Why is this project useful?
-How do I get started?
-Where can I get more help, if I need it?
-
-- Develop my python programming.
-- Understand the algorithms better by implementing them.
+This is a project containing my own python implementations of the problems and algorithms raised in the [Algorithms to live by](https://algorithmstoliveby.com/) book by Brian Christian and Tom Griffiths.
+The aim of this project is to:
+- Develop my python programming, including different data structures and python libraries and tools
+- Understand the algorithms better by implementing them
+- Have a simple project to experiment with CI/CD pipelines and good project practices
+- Practise writing good documentation
+- Implement test driven development
 
 # Getting started
 
@@ -22,7 +20,7 @@ Where can I get more help, if I need it?
 
 Make is used to manage the project. To setup the project, run the following command:
 
-```bash
+```
 make setup
 ```
 This creates a virtual environment and installs the required python packages, see the [requirements.txt](requirements.txt) file.
@@ -31,7 +29,7 @@ This creates a virtual environment and installs the required python packages, se
 
 To run the tests, run the following command:
 
-```bash
+```
 make test
 ```
 
@@ -39,7 +37,7 @@ make test
 
 To run the code, run the following command:
 
-```bash
+```
 make FOLDER
 ```
 where `FOLDER` is the folder containing the `main.py` you want to run.
