@@ -8,15 +8,15 @@ The aim of this project is to:
 - Practise writing good documentation
 - Implement test driven development
 
-# Getting started
+## Getting started
 
-## Prerequisites
+### Prerequisites
 
 - Python 3.6 or later
 - pip
 - virtualenv
 
-## Setup
+### Setup
 
 Make is used to manage the project. To setup the project, run the following command:
 
@@ -25,7 +25,7 @@ make setup
 ```
 This creates a virtual environment and installs the required python packages, see the [requirements.txt](requirements.txt) file.
 
-## Running the tests
+### Running the tests
 
 To run the tests, run the following command:
 
@@ -33,7 +33,7 @@ To run the tests, run the following command:
 make test
 ```
 
-## Running the code
+### Running the code
 
 To run the code, run the following command:
 
@@ -42,7 +42,7 @@ make FOLDER
 ```
 where `FOLDER` is the folder containing the `main.py` you want to run.
 
-## Cleaning up
+### Cleaning up
 
 To clean up the project, run the following command:
 
@@ -51,7 +51,7 @@ make clean
 ```
 which removes the virtual environment and any other generated files.
 
-# Contributing
+## Contributing
 
 You are more than welcome contribute by raising github issues (even just to ask questions, or raise a point) and/or submit a pull requests.
 The standard github flow is used:
@@ -61,10 +61,10 @@ The standard github flow is used:
 4. Push to the Branch (git push origin feature/AmazingFeature)
 5. Open a Pull Request
 
-# License
+## License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-# Acknowledgements
+## Acknowledgements
 
 Naturally, this project is inspired by and makes heavy use of the book [Algorithms to live by](https://algorithmstoliveby.com/) by Brian Christian and Tom Griffiths.
