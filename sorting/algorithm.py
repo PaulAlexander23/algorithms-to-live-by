@@ -25,13 +25,10 @@ class linear_search(algorithm):
         pass
 
     def solve(self, problem):
-
         # Search for the target value
-
         for i in range(len(problem.items)):
             if problem.items[i].value == problem.target:
                 return 1
-
         return 0
 
 class bubble_sort_search(algorithm):

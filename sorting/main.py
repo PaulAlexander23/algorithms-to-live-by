@@ -5,12 +5,10 @@ import os
 sys.path.append(os.path.dirname(os.path.relpath("../")))
 
 from sorting.item import item
-from sorting.problem import sorting_problem
-from sorting.algorithm import algorithm, bubble_sort
+from sorting.problem import sorting_problem, searching_problem
+from sorting.algorithm import algorithm, bubble_sort, linear_search
 
-def main():
-    print("Sorting")
-
+def sorting():
     N = int(input("Enter the number of items: "))
     p = sorting_problem(N)
 
@@ -34,12 +32,43 @@ def main():
 
     s = a.solve(p)
 
-    if N == 0:
-        return 0
+    if N != 0:
+        for i in range(N):
+            print(f"{s[i].name}: {s[i].value}")
 
-    for i in range(N):
-        print(f"{s[i].name}: {s[i].value}")
+def searching():
+    N = int(input("Enter the number of items: "))
+    T = int(input("Enter the target: "))
 
+    # Get user input to select the algorithm
+    print("Select an algorithm:")
+    print("1. Linear search")
+    print("2. Bubble Sort search")
+
+    index = input("Enter the number of the algorithm: ")
+
+    p = searching_problem(N,T)
+    a = linear_search()
+    result = a.solve(p)
+
+    if N != 0:
+        for i in range(N):
+            print(f"{p.items[i].name}: {p.items[i].value}")
+    print("Target:", T, "is", "found." if result == 1 else "not found.")
+
+
+def main():
+    print("Sorting and searching")
+
+    # Get user input to select the algorithm
+    print("Select a problem:")
+    print("1. Sorting")
+    print("2. Searching")
+
+    if input("Enter the number of the problem: ") == "1":
+        sorting()
+    else:
+        searching()
     return 0
 
 if __name__ == "__main__":
