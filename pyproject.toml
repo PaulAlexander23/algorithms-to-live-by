@@ -1,0 +1,25 @@
+[project]
+name = "algorithmstolivebypaulalexander"
+version = "0.0.1"
+authors = [
+  { name="Paul Alexander", email="paulalexander23@live.co.uk" },
+]
+description = "This is a project containing my own python implementations of the problems and algorithms raised in the Algorithms to live by book by Brian Christian and Tom Griffiths."
+readme = "README.md"
+requires-python = ">=3.8"
+classifiers = [
+    "Programming Language :: Python :: 3",
+    "Operating System :: OS Independent",
+]
+license = "MIT"
+license-files = ["LICEN[CS]E*"]
+
+[project.urls]
+Homepage = "https://github.com/PaulAlexander23/algorithms-to-live-by"
+Issues = "https://github.com/PaulAlexander23/algorithms-to-live-by/issues"
+
+[tool.pytest.ini_options]
+pythonpath = "."
+addopts = [
+    "--import-mode=importlib",
+]
