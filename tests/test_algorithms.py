@@ -1,8 +1,8 @@
 import pytest
 import numpy as np
-from stopping_problem.algorithms import *
-from stopping_problem.candidate import candidate
-from stopping_problem.candidate_list import candidate_list
+from algorithmstolivebypaulalexander.algorithms import random_algorithm, optimal_stopping_algorithm
+from algorithmstolivebypaulalexander.candidate import candidate
+from algorithmstolivebypaulalexander.candidate_list import candidate_list
 
 def test_random_algorithm():
     np.random.seed(0)

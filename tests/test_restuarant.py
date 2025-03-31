@@ -1,5 +1,5 @@
 import pytest
-from explore_vs_exploit.restuarant import restuarant
+from algorithmstolivebypaulalexander.restuarant import restuarant
 
 def test_restuarant():
     r = restuarant(0.89)

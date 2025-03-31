@@ -1,7 +1,7 @@
 #!/usr/bin/python3
 
 import numpy as np
-from stopping_problem.candidate import candidate
+from algorithmstolivebypaulalexander.candidate import candidate
 
 class candidate_list:
     def __init__(self, N):

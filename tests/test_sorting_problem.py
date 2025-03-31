@@ -1,6 +1,6 @@
 import pytest
 
-from sorting.problem import sorting_problem, searching_problem
+from algorithmstolivebypaulalexander.sorting_problem import sorting_problem, searching_problem
 
 def test_problem():
     p = sorting_problem(3)

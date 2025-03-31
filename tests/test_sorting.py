@@ -1,7 +1,7 @@
 import pytest
 from unittest.mock import patch
 
-from sorting.main import main
+from algorithmstolivebypaulalexander.sorting import main
 
 def test_main_sorting_does_not_fail_for_valid_inputs():
     for n_items in [0, 1, 10]:

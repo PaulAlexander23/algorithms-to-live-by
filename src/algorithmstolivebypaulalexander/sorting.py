@@ -1,12 +1,7 @@
-import sys
-import os
 
-# Add the subfolder to the system path
-sys.path.append(os.path.dirname(os.path.relpath("../")))
-
-from sorting.item import item
-from sorting.problem import sorting_problem, searching_problem
-from sorting.algorithm import algorithm, bubble_sort, linear_search
+from algorithmstolivebypaulalexander.item import Item
+from algorithmstolivebypaulalexander.sorting_problem import sorting_problem, searching_problem
+from algorithmstolivebypaulalexander.sorting_algorithms import algorithm, bubble_sort, linear_search
 
 def sorting():
     N = int(input("Enter the number of items: "))

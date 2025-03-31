@@ -7,9 +7,9 @@ import numpy as np
 # Add the subfolder to the system path
 sys.path.append(os.path.dirname(os.path.relpath("../")))
 
-from stopping_problem.candidate import candidate
-from stopping_problem.candidate_list import candidate_list
-from stopping_problem.algorithms import random_algorithm, user_select_algorithm, optimal_stopping_algorithm
+from algorithmstolivebypaulalexander.candidate import candidate
+from algorithmstolivebypaulalexander.candidate_list import candidate_list
+from algorithmstolivebypaulalexander.algorithms import random_algorithm, user_select_algorithm, optimal_stopping_algorithm
 
 def main():
     print("Stopping Problem")

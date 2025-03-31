@@ -1,6 +1,6 @@
 import numpy as np
 
-from sorting.item import item
+from algorithmstolivebypaulalexander.item import Item
 
 class sorting_problem:
     def __init__(self, N):
@@ -8,7 +8,7 @@ class sorting_problem:
         self.items = []
 
         for i in range(N):
-            self.items.append(item(str(i), np.random.randint(0, 100)))
+            self.items.append(Item(str(i), np.random.randint(0, 100)))
 
 class searching_problem:
     def __init__(self, N, target):
@@ -17,4 +17,4 @@ class searching_problem:
         self.target = target
 
         for i in range(N):
-            self.items.append(item(str(i), np.random.randint(0, 100)))
+            self.items.append(Item(str(i), np.random.randint(0, 100)))

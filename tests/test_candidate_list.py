@@ -1,5 +1,5 @@
 import pytest
-from stopping_problem.candidate_list import candidate_list
+from algorithmstolivebypaulalexander.candidate_list import candidate_list
 
 import numpy as np
 

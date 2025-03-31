@@ -2,10 +2,9 @@
 PYTHON = python
 VENV = .venv
 ACTIVATE = . $(VENV)/bin/activate
-SUBFOLDERS = $(shell find . -type d -not -path "./.*" -not -path "./__pycache__" -not -path "./$(VENV)")
 
 # Targets
-.PHONY: setup test clean $(SUBFOLDERS)
+.PHONY: setup test clean
 
 # Set up a virtual environment and install dependencies
 setup:
@@ -13,16 +12,10 @@ setup:
 	@if [ ! -d "$(VENV)" ]; then $(PYTHON) -m venv $(VENV); fi
 	@$(ACTIVATE) && pip install -r requirements.txt
 
-
-# Pattern rule to run main.py in the specified subfolder
-$(SUBFOLDERS):
-	@echo "Running main.py in subfolder: $@"
-	@$(ACTIVATE) && $(PYTHON) $@/main.py
-
 # Run tests
 test:
 	@echo "Running tests in all test folders..."
-	@$(ACTIVATE) && pytest
+	@$(ACTIVATE) && PYTHONPATH=src pytest --import-mode=importlib tests
 
 # Clean up build artifacts
 clean:

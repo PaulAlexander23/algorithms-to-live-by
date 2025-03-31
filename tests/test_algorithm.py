@@ -1,7 +1,7 @@
 import pytest
 
-from sorting.problem import sorting_problem, searching_problem
-from sorting.algorithm import bubble_sort, bubble_sort_search, linear_search
+from algorithmstolivebypaulalexander.sorting_problem import sorting_problem, searching_problem
+from algorithmstolivebypaulalexander.sorting_algorithms import bubble_sort, bubble_sort_search, linear_search
 
 def test_bubble_sort():
     p = sorting_problem(3)
