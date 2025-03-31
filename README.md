@@ -33,15 +33,6 @@ To run the tests, run the following command:
 make test
 ```
 
-### Running the code
-
-To run the code, run the following command:
-
-```
-make FOLDER
-```
-where `FOLDER` is the folder containing the `main.py` you want to run.
-
 ### Cleaning up
 
 To clean up the project, run the following command:
